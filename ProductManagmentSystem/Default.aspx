@@ -11,11 +11,10 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-1">
         
-          <asp:GridView ID="ItemsTable" CssClass="table table-striped" runat="server" AutoGenerateColumns="false">
+          <asp:GridView ID="ItemsTable" CssClass="table table-striped" runat="server" AutoGenerateColumns="false" ItemType="Repository.DataModels.Product">
               <Columns>
                   <asp:BoundField DataField="sku" HeaderText="SKU" />
-                  <asp:CommandField ShowEditButton="true" />
-                  <asp:CommandField ShowDeleteButton="true" />
+                  <asp:CommandField 
               </Columns>
           </asp:GridView>
           

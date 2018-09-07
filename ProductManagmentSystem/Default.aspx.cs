@@ -24,7 +24,6 @@ namespace ProductManagmentSystem
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
             List<Product> productList = _productService.GetProductData();
             ItemsTable.DataSource = productList;
             ItemsTable.DataBind();
